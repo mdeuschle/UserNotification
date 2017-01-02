@@ -22,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIF-rx-B1K">
-                                <rect key="frame" x="92.5" y="318" width="190" height="30"/>
-                                <state key="normal" title="Send Notification in 5 Sec..."/>
+                                <rect key="frame" x="82" y="318" width="211" height="30"/>
+                                <state key="normal" title="Send Notification in 5 Seconds"/>
                                 <connections>
                                     <action selector="SendNotificationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R1-Hw-tVA"/>
                                 </connections>

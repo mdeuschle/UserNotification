@@ -12,6 +12,7 @@
 		A84052BD1E1AEEF500B62785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84052BB1E1AEEF500B62785 /* Main.storyboard */; };
 		A84052BF1E1AEEF500B62785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84052BE1E1AEEF500B62785 /* Assets.xcassets */; };
 		A84052C21E1AEEF500B62785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84052C01E1AEEF500B62785 /* LaunchScreen.storyboard */; };
+		A84052CA1E1B17F600B62785 /* funny.gif in Resources */ = {isa = PBXBuildFile; fileRef = A84052C91E1B17F600B62785 /* funny.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A84052BE1E1AEEF500B62785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84052C11E1AEEF500B62785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A84052C31E1AEEF500B62785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84052C91E1B17F600B62785 /* funny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = funny.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A84052B61E1AEEF500B62785 /* UserNotification */ = {
 			isa = PBXGroup;
 			children = (
+				A84052C91E1B17F600B62785 /* funny.gif */,
 				A84052B71E1AEEF500B62785 /* AppDelegate.swift */,
 				A84052B91E1AEEF500B62785 /* ViewController.swift */,
 				A84052BB1E1AEEF500B62785 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84052C21E1AEEF500B62785 /* LaunchScreen.storyboard in Resources */,
+				A84052CA1E1B17F600B62785 /* funny.gif in Resources */,
 				A84052BF1E1AEEF500B62785 /* Assets.xcassets in Resources */,
 				A84052BD1E1AEEF500B62785 /* Main.storyboard in Resources */,
 			);

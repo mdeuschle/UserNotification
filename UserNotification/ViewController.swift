@@ -29,12 +29,21 @@ class ViewController: UIViewController {
 
     func scheduleNotifications(inSeconds: TimeInterval, completion: @escaping (_ Success: Bool) -> ()) {
 
+        guard let imageURL = Bundle.main.url(forResource: "funny", withExtension: "gif") else {
+            completion(false)
+            return
+        }
+
+        var attachment: UNNotificationAttachment
+        attachment = try! UNNotificationAttachment(identifier: "myNotification", url: imageURL, options: .none)
         let notif = UNMutableNotificationContent()
         notif.title = "Latte Sale!"
         notif.subtitle = "only $1.00"
         notif.body = "Choose your favorite flavor"
+        notif.attachments = [attachment]
 
-        let notifTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+
+        let notifTrigger = UNTimeIntervalNotificationTrigger(timeInterval: inSeconds, repeats: false)
         let request = UNNotificationRequest(identifier: "myNotification", content: notif, trigger: notifTrigger)
 
         center.add(request, withCompletionHandler: { error in
@@ -51,7 +60,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func SendNotificationButtonTapped(_ sender: UIButton) {
-
+        scheduleNotifications(inSeconds: 5.0, completion: { success in
+            if success {
+                print("Notification successful")
+            } else {
+                print("Not suceesful")
+            }
+            
+        })
+        
     }
 }
 
